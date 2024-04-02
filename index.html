@@ -24,10 +24,10 @@
     <link rel="icon" type="image/x-icon" href="images/logo.png">
     <style>
         .token-card {
-            transition: transform 0.3s ease-in-out;
+            transition: background-color 0.3s ease-in-out;
         }
         .token-card:hover {
-            transform: translateY(-10px);
+            background-color: #1f55b2; /* New background color on hover */
         }
     </style>
 
@@ -311,7 +311,7 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 m-10 align-middle ">
                 <!-- Total Supply -->
-                <div class="token1 p-6 border-4 border-white rounded-lg shadow-2xl" style="height: auto;">
+                <div class="token1 p-6 border-4 border-white rounded-lg shadow-2xl token-card" style="height: auto;">
                     <h1 class="text-3xl font-bold mb-4 text-white">Phase 1</h1>
                     <ul class="list-disc list-custom">
                         <li>Stay live on Telegram and YouTube until reaching a $30 million market cap.</li> <br>
@@ -320,7 +320,7 @@
                     </ul>
                 </div>
                 <!-- Initial Liquidity -->
-                <div class="token2 p-6 border-4 border-white rounded-lg shadow-md">
+                <div class="token2 p-6 border-4 border-white rounded-lg shadow-md token-card">
                     <h1 class="text-3xl font-bold mb-4 text-white">Phase 2</h1>
                     <ul class="list-disc list-custom">
                         <li>Continue to engage live on Telegram and YouTube until hitting a $250 million market cap</li> <br>
@@ -329,22 +329,21 @@
                     </ul>
                 </div>
                 <!-- addd -->
-                <div class="token3 p-6 border-4 border-white rounded-lg shadow-md">
+                <div class="token3 p-6 border-4 border-white rounded-lg shadow-md token-card">
                     <h1 class="text-3xl font-bold mb-4 text-white">Phase 3</h1>
                     <ul class="list-disc list-custom">
                         <li>Listing on big exchanges and celebrity collaboration</li>
                     </ul>
                 </div>
 
-
-                <div class="token3 p-6 border-4 border-white rounded-lg shadow-md">
+                <div class="token3 p-6 border-4 border-white rounded-lg shadow-md token-card">
                     <h1 class="text-3xl font-bold mb-4 text-white">Phase 4</h1>
                     <ul class="list-disc list-custom">
                         <li>Transition to a remote jungle setting and maintaining an online presence until reaching a $1 billion market cap, aiming for listing on Binance.</li>
                     </ul>
                 </div>
 
-                <div class="token3 p-6 border-4 border-white rounded-lg shadow-md">
+                <div class="token3 p-6 border-4 border-white rounded-lg shadow-md token-card">
                     <h1 class="text-3xl font-bold mb-4 text-white">Phase 5</h1>
                     <ul class="list-disc list-custom">
                         <li>Upon reaching a $2 billion market cap, secure a presence on Netflix to further expand visibility and recognition of The Milestone project.`</li>
@@ -486,5 +485,6 @@
         navbg.classList.toggle('active');
     });
 </script>
+
 
 </html>
