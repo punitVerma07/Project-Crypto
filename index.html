@@ -26,8 +26,10 @@
         .token-card {
             transition: background-color 0.3s ease-in-out;
         }
+
         .token-card:hover {
-            background-color: #1f55b2; /* New background color on hover */
+            background-color: hsla(0, 100%, 50%, 0.577)
+                /* New background color on hover */
         }
     </style>
 
@@ -41,13 +43,13 @@
             <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="images/logo.png" class="h-12 rounded-full md:h-14" alt="etf" />
                 <span class=" md:hidden lg:block text-lg md:text-3xl font-extrabold whitespace-nowrap text-blue-500"
-                    style="background-image: linear-gradient(to right, rgb(150, 24, 182), violet);
+                    style="background-image: linear-gradient(to right, hsl(0, 100%, 50%), rgb(234, 255, 0));
                 color: transparent;
                 -webkit-background-clip: text; /* For Safari and older versions of Chrome */
                 background-clip: text;">$MILESTONE</span>
             </a>
-            <button data-collapse-toggle="navbar-default" type="button" style="color: cyan;"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-sm md:hidden hover:bg-cyan-500  "
+            <button data-collapse-toggle="navbar-default" type="button" style="color: hsl(0, 100%, 50%);"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-sm md:hidden hover:bg-red-600  "
                 aria-controls="navbar-default" aria-expanded="false" onclick="toggleMenu()">
                 <span class="sr-only">Open main menu</span>
                 <span id="menuIcon" class="menu-icon">
@@ -63,17 +65,17 @@
                     class="font-medium flex flex-col  p-4 md:p-0 mt-4 border rounded-sm md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
                     <li>
                         <a href="#"
-                            class="violet block py-2 px-3 text-white text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-pink-500 md:p-0"
+                            class="violet block py-2 px-3 text-white text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0"
                             aria-current="page"><i class="bx bx-coin"></i> HOME</a>
                     </li>
                     <li>
                         <a href="#about"
-                            class="violet block py-2 px-3 text-white text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-pink-500 md:p-0"
+                            class="violet block py-2 px-3 text-white text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0"
                             aria-current="page"><i class="bx bx-coin"></i> ABOUT</a>
                     </li>
                     <li>
                         <a href="#tokenomics"
-                            class="violet block py-2 px-3 text-white text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-pink-500 md:p-0"
+                            class="violet block py-2 px-3 text-white text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0"
                             aria-current="page"><i class="bx bx-coin"></i> TOKENOMICS</a>
                     </li>
                     <!-- <li>
@@ -83,7 +85,7 @@
                     </li> -->
                     <li>
                         <a href="#social"
-                            class="violet block py-2 px-3 text-white text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-pink-500 md:p-0  ">
+                            class="violet block py-2 px-3 text-white text-lg lg:text-xl rounded hover:text-pink-500 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0  ">
                             <i class="bx bx-message-dots"></i> SOCIALS</a>
                     </li>
                 </ul>
@@ -113,7 +115,7 @@
 
                 <h1 class="text-3xl text-center lg:text-5xl font-extrabold break-words lg:px-4 mt-6 lg:mt-0">Welcome to
                     <br>
-                    <span class="text-center text-4xl lg:text-7xl text-cyan-500 glow-text" style="background-image: linear-gradient(to right, cyan, violet);
+                    <span class="text-center text-4xl lg:text-7xl text-cyan-500 glow-text" style="background-image: linear-gradient(to right, hsl(0, 100%, 50%), rgb(234, 255, 0));
                     color: transparent;
                     -webkit-background-clip: text;
                     background-clip: text;">$Milestone</span>
@@ -217,7 +219,11 @@
     <section id="about" class="shadow-2xl py-16">
         <div class="flex flex-col items-center justify-center mx-5 lg:mx-20 gap-5">
             <p class="text-4xl lg:text-5xl font-extrabold text-center text-white ">Introducing
-                $MILESTONE ($MILESTONE)</p>
+                <span class="text-center text-4xl lg:text-7xl text-cyan-500 glow-text" style="background-image: linear-gradient(to right, hsl(0, 100%, 50%), rgb(234, 255, 0));
+                    color: transparent;
+                    -webkit-background-clip: text;
+                    background-clip: text;">$Milestone</span>
+            </p>
             <div class="hero lg:h-screen flex flex-col-reverse justify-between lg:flex-row items-center mx-5 lg:mx-10">
                 <div class="main-logo about-logo w-fill lg:w-1/2 rounded-full mt-8">
                     <img src="images/logo.png" alt="Animated" id="baby-trump" style="border-radius:10px ;" />
@@ -229,13 +235,13 @@
                             <span>
                                 Step into the heart of The Milestone, where passion meets perseverance and every
                                 interaction is infused with emotion. Here, I'm not just a participant; I'm your
-                                steadfast companion, committed to walking this path with you every step of the way. As
-                                the first-ever person to remain tirelessly online, interacting with our community until
+                                steadfast companion, committed to walking this path with you every step of the way.
+                                As the first-ever person to remain tirelessly online, interacting with our community until
                                 we reach our destination, know that we journey together.In the face of challenges,
                                 doubts, and uncertainties, we stand alongside each
                                 other,
-                                beacons of unwavering support and determination. Together, we defy the odds, turning
-                                shared dreams into tangible realities. Your journey is not just yours alone—it's
+                                beacons of unwavering support and determination. Your journey is not just yours
+                                alone—it's
                                 ours to
                                 embrace, nurture, and celebrate.
 
@@ -315,15 +321,17 @@
                     <h1 class="text-3xl font-bold mb-4 text-white">Phase 1</h1>
                     <ul class="list-disc list-custom">
                         <li>Stay live on Telegram and YouTube until reaching a $30 million market cap.</li> <br>
-                        <li>Upon achieving this milestone, embark on a journey to Antarctica with a poster of The Milestone token.</li>
-                    
+                        <li>Upon achieving this milestone, embark on a journey to Antarctica with a poster of The
+                            Milestone token.</li>
+
                     </ul>
                 </div>
                 <!-- Initial Liquidity -->
                 <div class="token2 p-6 border-4 border-white rounded-lg shadow-md token-card">
                     <h1 class="text-3xl font-bold mb-4 text-white">Phase 2</h1>
                     <ul class="list-disc list-custom">
-                        <li>Continue to engage live on Telegram and YouTube until hitting a $250 million market cap</li> <br>
+                        <li>Continue to engage live on Telegram and YouTube until hitting a $250 million market cap</li>
+                        <br>
                         <li>Upon reaching this milestone, customize a car with The Milestone's name and logo. </li><br>
                         <li> Travel to at least 50 countries to promote awareness of the token</li>
                     </ul>
@@ -339,21 +347,24 @@
                 <div class="token3 p-6 border-4 border-white rounded-lg shadow-md token-card">
                     <h1 class="text-3xl font-bold mb-4 text-white">Phase 4</h1>
                     <ul class="list-disc list-custom">
-                        <li>Transition to a remote jungle setting and maintaining an online presence until reaching a $1 billion market cap, aiming for listing on Binance.</li>
+                        <li>Transition to a remote jungle setting and maintaining an online presence until reaching a $1
+                            billion market cap, aiming for listing on Binance.</li>
                     </ul>
                 </div>
 
                 <div class="token3 p-6 border-4 border-white rounded-lg shadow-md token-card">
                     <h1 class="text-3xl font-bold mb-4 text-white">Phase 5</h1>
                     <ul class="list-disc list-custom">
-                        <li>Upon reaching a $2 billion market cap, secure a presence on Netflix to further expand visibility and recognition of The Milestone project.`</li>
+                        <li>Upon reaching a $2 billion market cap, secure a presence on Netflix to further expand
+                            visibility and recognition of The Milestone project.`</li>
                     </ul>
                 </div>
-                
+
                 <div class="token1 p-6 border-4 border-white rounded-lg shadow-2xl token-card" style="height: auto;">
-                    <h1 class="text-3xl font-bold mb-4 text-white">Phase 1</h1>
+                    <h1 class="text-3xl font-bold mb-4 text-white">Phase 6</h1>
                     <ul class="list-disc list-custom">
-                        <li>At a $5 billion market cap, initiate the development and launch of a dedicated cryptocurrency exchange for The Milestone token.</li> <br>                    
+                        <li>At a $5 billion market cap, initiate the development and launch of a dedicated
+                            cryptocurrency exchange for The Milestone token.</li> <br>
                     </ul>
                 </div>
 
@@ -413,7 +424,11 @@
 
             <div class="social w-full md:w-1/2 mx-4 px-4">
                 <h1 class="text-center md:text-left text-3xl lg:text-5xl font-extrabold mb-8 text-white ">Follow
-                    $MILESTONE on social media</h1>
+                    <span class="text-center text-4xl lg:text-7xl text-cyan-500 glow-text" style="background-image: linear-gradient(to right, hsl(0, 100%, 50%), rgb(234, 255, 0));
+                    color: transparent;
+                    -webkit-background-clip: text;
+                    background-clip: text;">$Milestone</span> on social media
+                </h1>
                 <div class="flex items-center justify-center md:justify-start gap-4 ">
                     <a href="https://t.me/BabyTrumpGlobal">
                         <img class="w-24 transform hover:scale-110 transition duration-200" src="images/insta.jpg"
@@ -424,8 +439,8 @@
                             alt="">
                     </a>
                     <a href="">
-                        <img class="w-24 transform hover:scale-110 transition duration-200"
-                            src="images/tele.jpg" alt="">
+                        <img class="w-24 transform hover:scale-110 transition duration-200" src="images/tele.jpg"
+                            alt="">
                     </a>
 
                 </div>
